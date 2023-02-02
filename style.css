@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: monospace;
+}
+
+main {
+  margin-inline: 11%;
+}
+
+h1,
+h2,
+h3,
+a,
+p {
+  font-family: helvetica;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+a:hover {
+  color: rgb(255, 102, 0);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#header {
+  display: grid;
+  grid-template-rows: 2rem 4rem 2rem;
+  grid-auto-columns: 1fr;
+}
+
+.header_flex_SB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 11%;
+}
+
+.header_flex_C {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_flex_S {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header_flex_E {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}
+
+.delivery_grid {
+  display: grid;
+  border: 1px solid rgb(233, 231, 231);
+  grid-template-rows: 1fr 2fr 1fr 1fr;
+  padding-inline: 15px;
+}
+
+.delivery_grid > p {
+  display: flex;
+  align-items: center;
+}
+
+.delivery_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
+.product_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 200px;
+}
+
+.products_grid {
+  display: grid;
+  grid-template-columns: 0.5fr 4fr;
+  gap: 5rem;
+}
+
+.products_grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.products_BG {
+  padding: 1rem;
+  background-color: rgb(233, 231, 231);
+}
+
+.products_flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.category_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 2.5rem;
+  line-height: 1.8;
+}
+
+.category > a {
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.category > a:hover {
+  background-color: rgb(233, 231, 231);
+}
+
+.grey_BG {
+  background-color: rgb(233, 231, 231);
+}
+
+.orange {
+  color: rgb(255, 102, 0);
+}
+
+.chrislando {
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.sale {
+  text-decoration: line-through rgb(255, 102, 0) 2px solid;
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+  font-size: 1.5rem;
+}
+
+.top_banner {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.gap_25 {
+  gap: 25px;
+}
+
+.item {
+  width: 25%;
+}
+
+.item2 {
+  width: 50%;
+}
+
+.breakline {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(233, 231, 231);
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.outline {
+  border: 1px rgb(233, 231, 231) solid;
+  padding: 20px;
+}
