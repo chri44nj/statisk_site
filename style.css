@@ -107,7 +107,7 @@ img {
 .products_grid2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 4rem 1rem;
 }
 
 .products_BG {
@@ -181,6 +181,20 @@ img {
 .item2 {
   width: 50%;
 }
+
+.sold_out_no {
+  display: none;
+}
+
+.sold_out_yes {
+  display: block;
+  color: orange;
+}
+
+.sold_out_yes_article {
+background-color: rgb(233, 231, 231;
+}
+
 
 .breakline {
   height: 1px;

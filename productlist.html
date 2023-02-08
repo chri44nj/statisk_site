@@ -84,70 +84,17 @@
             </div>
             <div class="products_BG">
                 <div class="products_grid2">
-                    <div>
-                        <img src="https://kea-alt-del.dk/t7/images/webp/1000/1528.webp" alt="">
-                        <p>Brand name</p>
-                        <p>Product name</p>
-                        <p>Price</p>
-                    </div>
-                    <div><img src="https://kea-alt-del.dk/t7/images/webp/1000/1528.webp" alt="">
-                        <p>Brand name</p>
-                        <p>Product name</p>
-                        <p>Price</p>
-                    </div>
-                    <div><img src="https://kea-alt-del.dk/t7/images/webp/1000/1528.webp" alt="">
-                        <p>Brand name</p>
-                        <p>Product name</p>
-                        <p>Price</p>
-                    </div>
-                    <div>
-                        <img src="https://kea-alt-del.dk/t7/images/webp/1000/1528.webp" alt="">
-                        <p>Brand name</p>
-                        <p>Product name</p>
-                        <p>Price</p>
-                    </div>
-                    <div><img src="https://kea-alt-del.dk/t7/images/webp/1000/1528.webp" alt="">
-                        <p>Brand name</p>
-                        <p>Product name</p>
-                        <p>Price</p>
-                    </div>
-                    <div><img src="https://kea-alt-del.dk/t7/images/webp/1000/1528.webp" alt="">
-                        <p>Brand name</p>
-                        <p>Product name</p>
-                        <p>Price</p>
-                    </div>
-                    <div>
-                        <img src="https://kea-alt-del.dk/t7/images/webp/1000/1528.webp" alt="">
-                        <p>Brand name</p>
-                        <p>Product name</p>
-                        <p>Price</p>
-                    </div>
-                    <div><img src="https://kea-alt-del.dk/t7/images/webp/1000/1528.webp" alt="">
-                        <p>Brand name</p>
-                        <p>Product name</p>
-                        <p>Price</p>
-                    </div>
-                    <div><img src="https://kea-alt-del.dk/t7/images/webp/1000/1528.webp" alt="">
-                        <p>Brand name</p>
-                        <p>Product name</p>
-                        <p>Price</p>
-                    </div>
-                    <div>
-                        <img src="https://kea-alt-del.dk/t7/images/webp/1000/1528.webp" alt="">
-                        <p>Brand name</p>
-                        <p>Product name</p>
-                        <p>Price</p>
-                    </div>
-                    <div><img src="https://kea-alt-del.dk/t7/images/webp/1000/1528.webp" alt="">
-                        <p>Brand name</p>
-                        <p>Product name</p>
-                        <p>Price</p>
-                    </div>
-                    <div><img src="https://kea-alt-del.dk/t7/images/webp/1000/1528.webp" alt="">
-                        <p>Brand name</p>
-                        <p>Product name</p>
-                        <p>Price</p>
-                    </div>
+                    <template class="productTemplate">
+                        <article>
+                            <img src="https://kea-alt-del.dk/t7/images/webp/1000/1528.webp" alt="">
+                            <h3 class="brand_name">Brand name</h3>
+                            <h2 class="product_name">Product name</h2>
+                            <div class="delivery_flex">
+                                <p class="price">Price</p>
+                                <p class="sold_out_no">Sold out</p>
+                            </div>
+                        </article>
+                    </template>
                 </div>
             </div>
         </section>
@@ -157,6 +104,7 @@
 
     </footer>
 
+    <script src="js/productlist.js"></script>
 </body>
 
 </html>
