@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <meta name="robots" content="noindex">
     <title>Product</title>
 </head>
 
@@ -23,13 +24,7 @@
             <div class="header_flex_SB">
                 <nav class="header_flex_S item gap_25">
                     <a href="category.html">
-                        <h3>Categories</h3>
-                    </a>
-                    <a href="productlist.html">
-                        <h3>Products</h3>
-                    </a>
-                    <a href="product.html">
-                        <h3>Product</h3>
+                        <h2>Categories</h2>
                     </a>
                 </nav>
                 <a href="index.html" class="header_flex_C item2">
@@ -48,37 +43,32 @@
                 </div>
             </div>
             <div class="header_flex_C gap_25">
-                <a href="">
-                    <h3>Clothing</h3>
-                </a>
-                <a href="">
-                    <h3>Shoes</h3>
-                </a>
-                <a href="">
-                    <h3>Accessories</h3>
-                </a>
-                <a href="">
-                    <h3>Sale</h3>
-                </a>
+                <div id="an_ID" class="header_flex_C gap_25">
+                    <template class="template_seasons">
+                        <a href="">
+                            <h3>Clothing</h3>
+                        </a>
+                    </template>
+                </div>
             </div>
         </div>
         <div class="breakline"></div>
     </header>
 
     <main>
-        <h2><a href="index.html">Front page</a> > <a href="category.html">Categories</a> > <a href="productlist.html">Products</a> > <a href="product.html" class="product_name">*Product name*</a></h2>
-        <h1 class="product_name">*Product name*</h1>
+        <h2><a href="index.html">Front page</a> > <a href="category.html">Categories</a> > <a href="productlist.html">Products</a> ></h2>
+        <h1 class="product_name">Product name</h1>
         <br>
         <div class="product_grid">
-            <div><img src="https://kea-alt-del.dk/t7/images/webp/1000/1528.webp" alt="product"></div>
+            <div><img class="img" src="#" alt="product"> </div>
             <div>
-                <h3 class="brand_name">Brand name</h3>
-                <h2 class="product_name">Name of product</h2>
+                <p class="brand_name">Brand name</p>
+                <h2 class="product_name">Product name</h2>
                 <div class="flex">
-                    <h2 class="price">Price in DKK</h2>
+                    <h2 class="price">Price now in DKK</h2>
                 </div>
-                <p class="sale_price">Price in DKK</p>
-                <p class="status">Status: </p>
+                <p id="sale_price" class="sale_price">Previous price in DKK</p>
+                <p class="status">Status: In stock</p>
                 <br><br>
                 <div class="stars">
                     <i class="fa fa-star"></i>
@@ -87,21 +77,38 @@
                     <i class="fa fa-star"></i>
                     <i class="fa-regular fa-star"></i>
                 </div>
-                <p>34 ratings</p>
+                <p class="ratings">34 ratings</p>
+                <br>
+                <label>
+                    <select class="choose_size">
+                        <option value="antal">Choose size</option>
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                    </select>
+                </label>
                 <br><br>
-                <div>
-                    <h3 class="color">Color: Black</h3>
-                    <h3 class="size">Size: L</h3>
-                    <h3 class="fit">Fit: Slim</h3>
-                    <h3 class="material">Material: 100% cotton</h3>
-                    <h3 class="item_number">Item number: 12345</h3>
+                <a target="_blank" href="https://www.size.ly/blog/ultimate-clothing-measurement-overview-guide">Size guide</a><br><br>
+                <div class="purchase_flex">
+                    <button class="add_basket">Add to basket</button><br><br>
+                    <button class="like"><i class="fa-regular fa-heart"></i></button>
                 </div>
                 <br><br>
-                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus eveniet cumque in? Maxime culpa
-                    quam iste tempora optio libero doloremque. Dolorum eaque hic cupiditate maxime, expedita quidem
-                    dolorem tempore eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, odit
-                    quaerat. Ducimus, repudiandae tempore. Maiores, sed? Aut ipsa excepturi harum tempore qui? Eligendi
-                    et suscipit natus quis, commodi voluptatum quaerat?</div>
+                <div>
+                    <h3 class="color">Color</h3>
+                    <h3 class="size">Size: Your size</h3>
+                    <h3 class="fit">Fit: Like a glove</h3>
+                    <h3 class="material">Material: 100% Awesomeness</h3>
+                    <h3 class="item_number">69</h3>
+                </div>
+                <br><br>
+                <div class="product_information"><span class="product_name"></span> is the perfect choice for anyone looking to spend a whole lot of money, on not a whole lot of product. Don't
+                    know
+                    which
+                    foundation to donate to? Spend them on <span class="brand_name2"></span>, here on Chrislando! Chrislando: Money you'll never get back.</div>
                 <br><br>
                 <div class="outline">
                     <i class="fa-solid fa-truck-fast"></i>
@@ -123,14 +130,39 @@
                     <p>100 days return guarantee</p>
                 </div>
             </div>
-
         </div>
     </main>
+    <div id="like_container" class="gone">
+        <div id="like_sprite"></div>
+    </div>
+    <div class="breakline margin_top"></div>
 
     <footer>
-
+        <div class="footer_grid">
+            <ul class="list_footer">
+                <li><a href="index.html">
+                        <h3>Home</h3>
+                    </a></li>
+                <li><a href="category.html">
+                        <h3>Categories</h3>
+                    </a></li>
+            </ul>
+            <div class="social-media">
+                <a target="_blank" href="https://github.com/chri44nj"><i class="fab fa-github"></i></a>
+                <a target="_blank" href="https://youtube.com/@christianvalentin1697"><i class="fab fa-youtube"></i></a>
+                <a target="_blank" href="https://www.facebook.com/christian.l.valentin1/"><i class="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://www.instagram.com/valentinsdaghverdag/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer_copy">
+            <br>
+            <p class="top_banner">All products on this website are <span class="orange">CLEARLY</span> from https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset</p>
+            <p>&copy; Christian Valentin 2023</p>
+            <br>
+        </div>
     </footer>
-
+    <audio src="fuggedaboudit.mp3" id="fuggedaboudit"></audio>
+    <audio src="kiss.mp3" id="kiss"></audio>
     <script src="js/product.js"></script>
 </body>
 

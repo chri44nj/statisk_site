@@ -162,6 +162,7 @@ img {
   display: flex;
   gap: 5px;
   font-size: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .top_banner {
@@ -188,13 +189,13 @@ img {
 
 .sold_out_yes {
   display: block;
-  color: orange;
+  color: rgb(255, 102, 0);
+  text-transform: uppercase;
 }
 
 .sold_out_yes_article {
-background-color: rgb(233, 231, 231;
+  background-color: rgb(233, 231, 231);
 }
-
 
 .breakline {
   height: 1px;
@@ -207,4 +208,220 @@ background-color: rgb(233, 231, 231;
 .outline {
   border: 1px rgb(233, 231, 231) solid;
   padding: 20px;
+}
+
+.list_footer {
+  justify-content: flex-start;
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.list_footer li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-media i {
+  padding-left: 1rem;
+  font-size: 25px;
+}
+
+.footer_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  margin-inline: 11%;
+}
+
+.margin_top {
+  margin-top: 4rem;
+}
+
+.footer_copy {
+  background: rgb(233, 231, 231);
+  padding: 0.5rem 11%;
+}
+
+.invisible_space {
+  margin-bottom: 15rem;
+}
+
+.product_details_grid {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+.blur {
+  opacity: 0.1;
+}
+
+.img {
+  padding-bottom: 0.5rem;
+}
+
+.choose_size {
+  height: 3rem;
+  width: 100%;
+  border-radius: 0;
+  background-color: white;
+  border: 2px solid black;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.add_basket {
+  height: 3rem;
+  width: 90%;
+  border-radius: 0;
+  background-color: black;
+  border: 2px solid black;
+  font-size: 1rem;
+  color: white;
+}
+
+.add_basket:hover {
+  cursor: pointer;
+  background-color: rgb(255, 102, 0);
+  border-color: rgb(255, 102, 0);
+}
+
+.like {
+  height: 3rem;
+  width: 10%;
+  border-radius: 0;
+  background-color: white;
+  border: 2px solid black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.like:hover {
+  background-color: rgb(233, 231, 231);
+  color: rgb(255, 102, 0);
+  transition: 0.5s ease-in-out;
+  font-size: 2rem;
+  border-color: rgb(233, 231, 231);
+  font-weight: bold;
+}
+
+.purchase_flex {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.brand_name {
+  font-size: 1.5rem;
+}
+
+/** Animation **/
+
+#like_container {
+  position: absolute;
+  width: 5%;
+  aspect-ratio: 3059/2835;
+  overflow: hidden;
+}
+
+#like_sprite {
+  background-image: url(img/heart.png);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.like_animation {
+  animation-name: like;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes like {
+  0% {
+    translate: 0 0;
+    rotate: 0deg;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    translate: -250px -1400px;
+    rotate: -180deg;
+    opacity: 0;
+  }
+}
+
+.like_animation2 {
+  animation-name: like2;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes like2 {
+  0% {
+    translate: 0 0;
+    rotate: 180deg;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    translate: 250px -1400px;
+    rotate: 0deg;
+    opacity: 0;
+  }
+}
+
+.posx1 {
+  left: 20%;
+}
+
+.posx2 {
+  left: 30%;
+}
+
+.posx3 {
+  left: 40%;
+}
+
+.posx4 {
+  left: 50%;
+}
+
+.posx5 {
+  left: 60%;
+}
+
+.posx6 {
+  left: 70%;
+}
+
+.posx7 {
+  left: 80%;
+}
+
+.gone {
+  display: none;
+}
+
+.not_gone {
+  display: block;
 }

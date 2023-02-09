@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <meta name="robots" content="noindex">
     <title>Products</title>
 </head>
 
@@ -23,13 +24,7 @@
             <div class="header_flex_SB">
                 <nav class="header_flex_S item gap_25">
                     <a href="category.html">
-                        <h3>Categories</h3>
-                    </a>
-                    <a href="productlist.html">
-                        <h3>Products</h3>
-                    </a>
-                    <a href="product.html">
-                        <h3>Product</h3>
+                        <h2>Categories</h2>
                     </a>
                 </nav>
                 <a href="index.html" class="header_flex_C item2">
@@ -48,26 +43,21 @@
                 </div>
             </div>
             <div class="header_flex_C gap_25">
-                <a href="">
-                    <h3>Clothing</h3>
-                </a>
-                <a href="">
-                    <h3>Shoes</h3>
-                </a>
-                <a href="">
-                    <h3>Accessories</h3>
-                </a>
-                <a href="">
-                    <h3>Sale</h3>
-                </a>
+                <div id="an_ID" class="header_flex_C gap_25">
+                    <template class="template_seasons">
+                        <a href="">
+                            <h3>Clothing</h3>
+                        </a>
+                    </template>
+                </div>
             </div>
         </div>
         <div class="breakline"></div>
     </header>
 
     <main>
-        <h2><a href="index.html">Front page</a> > <a href="category.html">Categories</a> > <a href="productlist.html">Products</a></h2>
-        <h1>Clothing</h1>
+        <h2><a href="index.html">Front page</a> > <a href="category.html">Categories</a> ></h2>
+        <h1 class="product_type">Clothing</h1>
         <br>
         <section class="products_grid">
             <div class="products_flex">
@@ -86,12 +76,16 @@
                 <div class="products_grid2">
                     <template class="productTemplate">
                         <article>
-                            <img src="https://kea-alt-del.dk/t7/images/webp/1000/1528.webp" alt="">
-                            <h3 class="brand_name">Brand name</h3>
-                            <h2 class="product_name">Product name</h2>
-                            <div class="delivery_flex">
-                                <p class="price">Price</p>
-                                <p class="sold_out_no">Sold out</p>
+                            <a id="single_view_button" href="">
+                                <img class="img" src="https://kea-alt-del.dk/t7/images/webp/1000/1528.webp" alt="">
+                            </a>
+                            <div>
+                                <p class="brand_name">Brand name</p>
+                                <a class="product_name" href="">Product name</a>
+                                <div class="delivery_flex">
+                                    <p class="price">Price</p>
+                                    <p class="sold_out_no">Sold out</p>
+                                </div>
                             </div>
                         </article>
                     </template>
@@ -99,9 +93,29 @@
             </div>
         </section>
     </main>
+    <div class="breakline margin_top"></div>
 
     <footer>
-
+        <div class="footer_grid">
+            <ul class="list_footer">
+                <li><a href="index.html">
+                        <h3>Home</h3>
+                    </a></li>
+                <li><a href="category.html">
+                        <h3>Categories</h3>
+                    </a></li>
+            </ul>
+            <div class="social-media">
+                <a target="_blank" href="https://github.com/chri44nj"><i class="fab fa-github"></i></a>
+                <a target="_blank" href="https://youtube.com/@christianvalentin1697"><i class="fab fa-youtube"></i></a>
+                <a target="_blank" href="https://www.facebook.com/christian.l.valentin1/"><i class="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://www.instagram.com/valentinsdaghverdag/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer_copy">
+            <p class="top_banner">All products on this website are <span class="orange">CLEARLY</span> from https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset</p>
+            <p>&copy; Christian Valentin 2023</p>
+        </div>
     </footer>
 
     <script src="js/productlist.js"></script>
