@@ -24,7 +24,7 @@ function showProduct(product) {
     copy.querySelector(".sold_out_no").classList.add("sold_out_yes");
   }
   copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
-  copy.querySelector("#single_view_button").href = `product.html?id=${product.id}`;
+  copy.querySelector(".product_view").href = `product.html?id=${product.id}`;
   document.querySelector(".products_grid2").appendChild(copy);
 }
 

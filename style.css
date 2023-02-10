@@ -91,7 +91,6 @@ img {
   display: flex;
   gap: 20px;
 }
-
 .product_grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
